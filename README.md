@@ -1,102 +1,57 @@
 # IT Cloud & Security Portfolio
 
-## About This Portfolio
+Hands-on labs, projects, and documentation in **Cloud Infrastructure** and **Cybersecurity**, focused on Microsoft Azure. Every entry is a real environment I built, broke on purpose, and verified — not a copied tutorial.
 
-This repository documents my hands-on work, labs, projects, and technical documentation in IT Operations, Cloud Infrastructure, and Cybersecurity.
+**Mosab Hassan** · Cloud & Security · [LinkedIn](#) · [Email](#)
 
-The goal is to demonstrate practical skills through real-world scenarios, technical labs, implementation projects, troubleshooting, and security-focused documentation.
-
----
-
-## Areas of Focus
-
-### ☁️ Azure & Cloud
-
-Hands-on projects and labs related to Microsoft Azure and cloud infrastructure.
-
-- Azure infrastructure
-- Virtual Machines
-- Networking
-- Identity and Access
-- Storage
-- Monitoring
-- Security
-- Cloud administration
+> 🎯 **Track:** Azure networking & security, building toward **AZ-500 (Azure Security Engineer)** and a full secure-architecture capstone.
 
 ---
 
-### 🛡️ Microsoft Security
+## 🧪 Labs
 
-Practical security labs and projects focused on the Microsoft security ecosystem.
+Each lab follows the same discipline: a clear objective, an architecture diagram, real command output, and **verification by rollback** (change one variable, re-test, prove causation).
 
-- Microsoft Defender
-- Microsoft Sentinel
-- Identity Security
-- Security Monitoring
-- Threat Detection
-- Incident Response
-- Security Operations
-
----
-
-### 🧪 Labs
-
-Hands-on technical labs designed to build and demonstrate practical skills.
-
-- Network Security
-- Cloud Security
-- Microsoft Security
-- Azure Administration
-- Firewall & Network Labs
-- Virtualization
-- Troubleshooting
+| # | Lab | Domain | Key skills | Status |
+|---|-----|--------|-----------|--------|
+| 01 | [Blocking traffic with a UDR (blackhole)](labs/azure-net-01-udr-routing) | Networking | UDR · Route tables · Longest Prefix Match · Effective routes | ✅ Complete |
+| 02 | Azure Firewall vs NSG | Networking | Azure Firewall · Network/App rules · DNAT | 🔜 Next |
+| 03 | Private VM access with Azure Bastion | Networking / Security | Bastion · No public IP · Jump access | 🔜 Planned |
+| 04 | Load Balancer & health probes | Networking | L4 LB · Backend pool · Probes | 🔜 Planned |
+| 05 | Application Gateway + WAF | App delivery | L7 · TLS termination · WAF | 🔜 Planned |
+| 06 | Private Endpoint & Private Link | Security | Private access to PaaS · DNS | 🔜 Planned |
 
 ---
 
-### 🚀 Projects
+## 🗂️ Repository Structure
 
-Practical projects that combine infrastructure, cloud, networking, and security.
+```
+it-cloud-security-portfolio/
+├── labs/         hands-on, single-topic environments (numbered)
+├── projects/     larger multi-service builds (capstone architecture)
+├── docs/         concepts, cheat sheets, troubleshooting notes
+└── README.md     this index
+```
 
-Each project will include:
-
-- Objective
-- Architecture
-- Requirements
-- Implementation
-- Configuration
-- Testing
-- Results
-- Lessons Learned
+**Lab naming:** `<domain>-<area>-<NN>-<short-name>` — e.g. `azure-net-01-udr-routing`. The prefix groups topics; the number preserves order.
 
 ---
 
-### 📚 Documentation
+## 🎯 Areas of Focus
 
-Technical documentation covering:
-
-- Implementation procedures
-- Troubleshooting guides
-- Configuration guides
-- Security procedures
-- Architecture documentation
-- Lessons learned
+| Domain | Topics |
+|--------|--------|
+| **Azure Networking** | VNet · Subnets · NSG · UDR · Firewall · Load Balancer · App Gateway · Private Link · VPN |
+| **Identity & Access** | Microsoft Entra ID · RBAC · Managed Identity · Key Vault · Least Privilege |
+| **Security Architecture** | Defense in depth · Segmentation · Zero Trust · Private-by-default |
+| **Monitoring** | Azure Monitor · Log Analytics · Network Watcher · NSG Flow Logs |
 
 ---
 
-## Portfolio Structure
+## 🏗️ Capstone (in progress)
 
-```text
-Azure/
-    └── Azure cloud projects and labs
+A production-style **Secure Azure Architecture**: internet → Application Gateway + WAF → web tier → Azure Firewall → private app tier → private database, with Bastion for management, Private Endpoints for PaaS, and full monitoring. Built lab by lab, then assembled in `projects/`.
 
-Microsoft-Security/
-    └── Microsoft security projects and labs
+---
 
-Labs/
-    └── Hands-on technical labs
-
-Projects/
-    └── Practical infrastructure and security projects
-
-Documentation/
-    └── Technical documentation and procedures
+*This portfolio is actively maintained. Each commit reflects real hands-on work.*
