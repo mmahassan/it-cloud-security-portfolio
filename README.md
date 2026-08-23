@@ -2,7 +2,7 @@
 
 Hands-on labs, projects, and documentation in **Cloud Infrastructure** and **Cybersecurity**, focused on Microsoft Azure. Every entry is a real environment I built, broke on purpose, and verified — not a copied tutorial.
 
-**Mosab Hassan** · Cloud & Security · [LinkedIn]([#](https://www.linkedin.com/in/mosab-hassan) · [Email](mosab244@hotmail.com)
+**Mosab Hassan** · Cloud & Security · [LinkedIn]([https://www.linkedin.com/in/mosab-hassan] · [Email](mosab244@hotmail.com)
 
 > 🎯 **Track:** Azure networking & security, building toward **AZ-500 (Azure Security Engineer)** and a full secure-architecture capstone.
 
